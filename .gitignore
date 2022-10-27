@@ -67,6 +67,7 @@ data_*/
 .idea/**/dynamic.xml
 .idea/**/uiDesigner.xml
 .idea/**/dbnavigator.xml
+.fleet
 
 # Gradle
 .idea/**/gradle.xml
@@ -501,7 +502,8 @@ replay_pid*
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*

@@ -1,0 +1,8 @@
+version: '3.5'
+
+services:
+  app:
+    container_name: ms-video-encoder-go
+    build: .
+    volumes:
+    - .:/go/src/:rw
