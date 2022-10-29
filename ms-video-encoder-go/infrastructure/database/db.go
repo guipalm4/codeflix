@@ -4,6 +4,8 @@ import (
 	"encoder/domain"
 	"github.com/jinzhu/gorm"
 	"log"
+	_ "github.com/jinzhu/gorm/dialects/sqlite"
+	_ "github.com/lib/pq"
 )
 
 type Database struct {
@@ -58,6 +60,7 @@ func (db *Database) Connect() (*gorm.DB, error) {
 
 	if db.AutoMigrateDb {
 		db.Db.AutoMigrate(&domain.Video{}, &domain.Job{})
+		db.Db.Model(domain.Job{}).AddForeignKey("video_id", "videos (id)", "CASCADE", "CASCADE")
 	}
 
 	return db.Db, nil
