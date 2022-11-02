@@ -3,9 +3,9 @@ package database
 import (
 	"encoder/domain"
 	"github.com/jinzhu/gorm"
-	"log"
 	_ "github.com/jinzhu/gorm/dialects/sqlite"
 	_ "github.com/lib/pq"
+	"log"
 )
 
 type Database struct {
