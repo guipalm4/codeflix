@@ -25,6 +25,7 @@
 # Go workspace file
 go.work
 
+
 ### Go Patch ###
 /vendor/
 /Godeps/
@@ -730,3 +731,4 @@ $RECYCLE.BIN/
 # Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
 
 bucket-credential.json
+.tool-versions
